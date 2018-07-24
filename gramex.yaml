@@ -9,3 +9,13 @@ url:
     handler : FileHandler
     kwargs :
       path : $YAMLPATH/app/index.html
+  deliveries:
+    pattern : /$YAMLURL/deliveries_data
+    handler : FormHandler
+    kwargs  : 
+      url : $YAMLPATH/app/data/ipl_deliveries.csv
+  test:
+    pattern : /$YAMLURL/test
+    handler : FileHandler
+    kwargs  :
+      path : $YAMLPATH/test.html
